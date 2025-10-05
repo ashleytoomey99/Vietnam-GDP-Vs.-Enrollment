@@ -1,75 +1,102 @@
-{
-  "dataset_name": "Vietnam GDP vs Primary Enrollment",
-  "description": "Time series dataset tracking the relationship between Vietnam's primary school enrollment and GDP from 2001 to 2020",
-  "source": "World Bank Data (assumed based on typical economic and education statistics)",
-  "time_period": {
-    "start_year": 2001,
-    "end_year": 2020,
-    "frequency": "Annual"
-   },
-  "total_records": 20,
-  "columns": [
-    {
-      "column_name": "Unnamed: 0",
-      "data_type": "integer",
-      "description": "Row index number",
-      "example_values": [0, 1, 2, 3, 4],
-      "notes": "Automatically generated index from pandas DataFrame; can be ignored or used as record identifier"
-    },
-    {
-      "column_name": "Year",
-      "data_type": "integer",
-      "description": "Calendar year of observation",
-      "unit": "Year (YYYY format)",
-      "range": {
-        "min": 2001,
-        "max": 2020
-      },
-      "example_values": [2001, 2002, 2003, 2004, 2005],
-      "notes": "Primary temporal key for the dataset"
-    },
-    {
-      "column_name": "Primary_Enrollment",
-      "data_type": "float",
-      "description": "Total number of students enrolled in primary education in Vietnam",
-      "unit": "Number of students",
-      "range": {
-        "min": 6745016.0,
-        "max": 9751434.0
-      },
-      "example_values": [9751434.0, 9336913.0, 8841004.0],
-      "missing_values": "None observed",
-      "notes": "Represents the total count of children enrolled in primary schools (typically ages 6-11) across Vietnam. Shows a general declining trend from 2001-2010, followed by gradual recovery."
-    },
-    {
-      "column_name": "GDP",
-      "data_type": "float",
-      "description": "Gross Domestic Product of Vietnam",
-      "unit": "US Dollars (current prices)",
-      "range": {
-        "min": 32685198735.3053,
-        "max": 343242570827.351
-      },
-      "example_values": [32685198735.3053, 35064105500.8344, 39552513316.0734],
-      "missing_values": "None observed",
-      "notes": "Vietnam's GDP in current US dollars. Shows consistent growth throughout the period, with GDP increasing more than 10-fold from 2001 to 2020. Represents the total monetary value of all goods and services produced in Vietnam."
-    }
-  ],
-  "key_observations": [
-    "Primary enrollment decreased from ~9.75 million (2001) to ~6.75 million (2009), then gradually recovered to ~8.72 million (2020)",
-    "GDP showed consistent growth from ~$32.7 billion (2001) to ~$343.2 billion (2020)",
-    "The decline in primary enrollment may reflect demographic changes (declining birth rates) rather than reduced access to education",
-    "GDP growth was sustained even during periods of declining primary enrollment"
-  ],
-  "potential_analyses": [
-    "Correlation analysis between GDP growth and primary enrollment trends",
-    "Time series forecasting for future enrollment and GDP values",
-    "Investigation of inverse relationship between economic growth and enrollment decline",
-    "Per-student GDP calculation as a proxy for education investment capacity"
-  ],
-  "data_quality": {
-    "completeness": "100% (no missing values)",
-    "consistency": "High (all years sequential, no gaps)",
-    "precision": "High (GDP values include decimal precision)"
+[
+  {
+    "Year": 2001,
+    "Primary_Enrollment": 9751434.0,
+    "GDP": 32685198735.3053
+  },
+  {
+    "Year": 2002,
+    "Primary_Enrollment": 9336913.0,
+    "GDP": 35064105500.8344
+  },
+  {
+    "Year": 2003,
+    "Primary_Enrollment": 8841004.0,
+    "GDP": 39552513316.0734
+  },
+  {
+    "Year": 2004,
+    "Primary_Enrollment": 8350191.0,
+    "GDP": 45427854693.2554
+  },
+  {
+    "Year": 2005,
+    "Primary_Enrollment": 7773484.0,
+    "GDP": 57633255618.2731
+  },
+  {
+    "Year": 2006,
+    "Primary_Enrollment": 7317813.0,
+    "GDP": 66371664817.0436
+  },
+  {
+    "Year": 2007,
+    "Primary_Enrollment": 7041312.0,
+    "GDP": 77414425532.2452
+  },
+  {
+    "Year": 2008,
+    "Primary_Enrollment": 6871795.0,
+    "GDP": 99130304099.1274
+  },
+  {
+    "Year": 2009,
+    "Primary_Enrollment": 6745016.0,
+    "GDP": 106014659770.222
+  },
+  {
+    "Year": 2010,
+    "Primary_Enrollment": 6922624.0,
+    "GDP": 147198853578.923
+  },
+  {
+    "Year": 2011,
+    "Primary_Enrollment": 7048493.0,
+    "GDP": 172595960457.831
+  },
+  {
+    "Year": 2012,
+    "Primary_Enrollment": 7100950.0,
+    "GDP": 195592471672.748
+  },
+  {
+    "Year": 2013,
+    "Primary_Enrollment": 7202767.0,
+    "GDP": 213710932339.105
+  },
+  {
+    "Year": 2014,
+    "Primary_Enrollment": 7434848.0,
+    "GDP": 233449971628.523
+  },
+  {
+    "Year": 2015,
+    "Primary_Enrollment": 7543632.0,
+    "GDP": 239257234710.757
+  },
+  {
+    "Year": 2016,
+    "Primary_Enrollment": 7790009.0,
+    "GDP": 257095955975.529
+  },
+  {
+    "Year": 2017,
+    "Primary_Enrollment": 7801560.0,
+    "GDP": 281353402175.236
+  },
+  {
+    "Year": 2018,
+    "Primary_Enrollment": 8041842.0,
+    "GDP": 308702086757.617
+  },
+  {
+    "Year": 2019,
+    "Primary_Enrollment": 8506562.0,
+    "GDP": 330391329475.734
+  },
+  {
+    "Year": 2020,
+    "Primary_Enrollment": 8718356.0,
+    "GDP": 343242570827.351
   }
-}
+]
